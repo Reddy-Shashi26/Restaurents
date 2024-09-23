@@ -1,0 +1,108 @@
+<!-- Page 2: menu.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>Restaurant Menu</h1>
+            <div class="cart-info">
+                <span id="cart-icon">🛒</span>
+                <span id="cart-count">0</span> Items
+            </div>
+        </div>
+    </header>
+
+    <div class="menu-container">
+        <!-- Menu Item 1 (Pizza) -->
+        <div class="menu-item">
+            <img src="pizza.jpg" alt="Pizza" class="item-image">
+            <div class="item-details">
+                <h2>Corn Pizza</h2>
+                <p>₹299</p>
+                <div class="item-action">
+                    <button onclick="removeItem('Pizza', 299, 'pizza-count')">-</button> <!-- Remove Button -->
+                    <span id="pizza-count" class="item-count">0</span> <!-- Count Display -->
+                    <button onclick="addItem('Pizza', 299, 'pizza-count')">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Menu Item 2 (Burger) -->
+        <div class="menu-item">
+            <img src="burger.jpg" alt="Burger" class="item-image">
+            <div class="item-details">
+                <h2>Chicken Burger</h2>
+                <p>₹59</p>
+                <div class="item-action">
+                    <button onclick="removeItem('Burger', 59, 'burger-count')">-</button> <!-- Remove Button -->
+                    <span id="burger-count" class="item-count">0</span> <!-- Count Display -->
+                    <button onclick="addItem('Burger', 59, 'burger-count')">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+              <!-- Menu Item 1 (Pizza) -->
+        <div class="menu-item">
+            <img src="pizza.jpg" alt="Pizza" class="item-image">
+            <div class="item-details">
+                <h2>Italian Pizza</h2>
+                <p>₹299</p>
+                <div class="item-action">
+                    <button onclick="removeItem('Pizza', 299, 'pizza-count')">-</button> <!-- Remove Button -->
+                    <span id="pizza-count" class="item-count">0</span> <!-- Count Display -->
+                    <button onclick="addItem('Pizza', 299, 'pizza-count')">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+              <!-- Menu Item 2 (Burger) -->
+        <div class="menu-item">
+            <img src="burger.jpg" alt="Burger" class="item-image">
+            <div class="item-details">
+                <h2>veg Burger</h2>
+                <p>₹59</p>
+                <div class="item-action">
+                    <button onclick="removeItem('Burger', 59, 'burger-count')">-</button> <!-- Remove Button -->
+                    <span id="burger-count" class="item-count">0</span> <!-- Count Display -->
+                    <button onclick="addItem('Burger', 59, 'burger-count')">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+              <!-- Menu Item 1 (Pizza) -->
+        <div class="menu-item">
+            <img src="pizza.jpg" alt="Pizza" class="item-image">
+            <div class="item-details">
+                <h2>Onion Pizza</h2>
+                <p>₹299</p>
+                <div class="item-action">
+                    <button onclick="removeItem('Pizza', 299, 'pizza-count')">-</button> <!-- Remove Button -->
+                    <span id="pizza-count" class="item-count">0</span> <!-- Count Display -->
+                    <button onclick="addItem('Pizza', 299, 'pizza-count')">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+              <div class="menu-item">
+           
+            <div class="item-details">
+              <h2>      . . . </h2>
+               <h2>      . . . </h2>
+               
+                
+            </div>
+        </div>
+
+        <!-- Add more menu items similarly -->
+    </div>
+
+    <div class="footer">
+        <span id="cart-summary">Items: 0 | Total: ₹0</span>
+        <button onclick="placeOrder()">Place Order</button>
+    </div>
+
+
+</body>
+</html>
